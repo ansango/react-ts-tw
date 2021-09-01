@@ -5,7 +5,7 @@ import App from "./App";
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <App name="React Typescript Tailwind"/>
   </React.StrictMode>,
   document.getElementById("root")
 );
