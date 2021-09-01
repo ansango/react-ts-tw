@@ -1,4 +1,4 @@
-import { RouterEl } from "./router/Router";
+import { AppRouter } from "./router/AppRouter";
 
 type Props = {
   name: string;
@@ -8,7 +8,7 @@ const App = ({ name }: Props) => {
   return (
     <div className="App">
       <h1>{name}</h1>
-      <RouterEl />
+      < AppRouter/>
     </div>
   );
 };
