@@ -1,8 +1,5 @@
 import { Redirect, Route, Switch } from "react-router-dom";
-
-export const Home = () => {
-  return <div>HOME</div>;
-};
+import { Home } from "../components";
 
 const AppRouterDashboard = () => (
   <Switch>
