@@ -1,14 +1,9 @@
 import { AppRouter } from "./router/AppRouter";
 
-type Props = {
-  name: string;
-};
-
-const App = ({ name }: Props) => {
+const App = () => {
   return (
-    <div className="App">
-      <h1>{name}</h1>
-      < AppRouter/>
+    <div className="min-h-screen flex flex-col max-w-3xl px-4 mx-auto sm:px-6 xl:max-w-5xl xl:px-0">
+      <AppRouter />
     </div>
   );
 };

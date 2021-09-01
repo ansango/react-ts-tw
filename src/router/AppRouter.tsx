@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Switch } from "react-router-dom";
 import { useAuth } from "../auth/AuthProvider";
-import { Login } from "../components";
+import { Login, Nav } from "../components";
 
 import AppRouterDashboard from "./AppRouterDashboard";
 import PrivateRoute from "./PrivateRoute";
@@ -11,6 +11,7 @@ export const AppRouter = () => {
 
   return (
     <Router>
+      <Nav />
       <Switch>
         <PublicRoute exact path="/login" component={Login} isAuth={logged} />
         <PrivateRoute path="/" component={AppRouterDashboard} isAuth={logged} />

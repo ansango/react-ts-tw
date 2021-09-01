@@ -7,7 +7,7 @@ import { AuthProvider } from "./auth/AuthProvider";
 ReactDOM.render(
   <React.StrictMode>
     <AuthProvider>
-      <App name="React Typescript Tailwind" />
+      <App />
     </AuthProvider>
   </React.StrictMode>,
   document.getElementById("root")
